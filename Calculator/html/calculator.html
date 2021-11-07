@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calc.css">
+    <script type="text/javascript" src="../js/calc.js"></script>
+</head>
+<body>
+    <div class ="background_calc">
+        <h1>Programador Who</h1>      
+        <div class ="calculator">
+            <h2>Calculator</h2>
+            <p id="result"></p>  
+            <table>
+                <tr>
+                    <td><button class ="button_calc" onclick="clean()">C</button></td>
+                    <td><button class ="button_calc" onclick="back()"><</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('/')">/</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class ="button_calc" onclick="insert_numbers('7')">7</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('8')">8</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('9')">9</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class ="button_calc" onclick="insert_numbers('4')">4</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('5')">5</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('6')">6</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class ="button_calc" onclick="insert_numbers('1')">1</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('2')">2</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('3')">3</button></td>
+                    <td rowspan="2"><button class ="button_calc" style ="height:106px" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class ="button_calc" style = "width: 106px" onclick="insert_numbers('0')">0</button></td>
+                    <td><button class ="button_calc" onclick="insert_numbers('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+   
+</body>
+</html>
